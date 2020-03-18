@@ -1,0 +1,11 @@
+D:\PROYECTOS_GITHUB\NetCore_Microservicios\Microservice\ProductMicroservice\obj\Debug\netcoreapp2.2\ProductMicroservice.csproj.CoreCompileInputs.cache
+D:\PROYECTOS_GITHUB\NetCore_Microservicios\Microservice\ProductMicroservice\obj\Debug\netcoreapp2.2\ProductMicroservice.AssemblyInfoInputs.cache
+D:\PROYECTOS_GITHUB\NetCore_Microservicios\Microservice\ProductMicroservice\obj\Debug\netcoreapp2.2\ProductMicroservice.AssemblyInfo.cs
+D:\PROYECTOS_GITHUB\NetCore_Microservicios\Microservice\ProductMicroservice\bin\Debug\netcoreapp2.2\ProductMicroservice.deps.json
+D:\PROYECTOS_GITHUB\NetCore_Microservicios\Microservice\ProductMicroservice\bin\Debug\netcoreapp2.2\ProductMicroservice.runtimeconfig.json
+D:\PROYECTOS_GITHUB\NetCore_Microservicios\Microservice\ProductMicroservice\bin\Debug\netcoreapp2.2\ProductMicroservice.runtimeconfig.dev.json
+D:\PROYECTOS_GITHUB\NetCore_Microservicios\Microservice\ProductMicroservice\bin\Debug\netcoreapp2.2\ProductMicroservice.dll
+D:\PROYECTOS_GITHUB\NetCore_Microservicios\Microservice\ProductMicroservice\obj\Debug\netcoreapp2.2\ProductMicroservice.csprojAssemblyReference.cache
+D:\PROYECTOS_GITHUB\NetCore_Microservicios\Microservice\ProductMicroservice\obj\Debug\netcoreapp2.2\ProductMicroservice.RazorAssemblyInfo.cache
+D:\PROYECTOS_GITHUB\NetCore_Microservicios\Microservice\ProductMicroservice\obj\Debug\netcoreapp2.2\ProductMicroservice.RazorAssemblyInfo.cs
+D:\PROYECTOS_GITHUB\NetCore_Microservicios\Microservice\ProductMicroservice\obj\Debug\netcoreapp2.2\ProductMicroservice.RazorTargetAssemblyInfo.cache
