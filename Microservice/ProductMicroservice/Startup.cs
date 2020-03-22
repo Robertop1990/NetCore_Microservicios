@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using ProductMicroservice.Persistance;
+using ProductMicroservice.Persistance.Repositories;
 
 namespace ProductMicroservice
 {
@@ -27,7 +28,9 @@ namespace ProductMicroservice
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.AddDbContext<ProductDbContext>(x => x.UseSqlServer(Configuration.GetConnectionString("Product")));
+            services.AddDbContext<ProductDbContext>(x => x.UseSqlServer(Configuration.GetConnectionString("Product"), options => options.EnableRetryOnFailure()));
+            services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,6 +40,11 @@ namespace ProductMicroservice
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors(options =>
+            options.AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader());
 
             app.UseMvc();
         }

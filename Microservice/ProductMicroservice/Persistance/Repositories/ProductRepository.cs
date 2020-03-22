@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using ProductMicroservice.Models;
 
 namespace ProductMicroservice.Persistance.Repositories
@@ -13,32 +14,36 @@ namespace ProductMicroservice.Persistance.Repositories
 
         public void DeleteProduct(int productId)
         {
-            throw new NotImplementedException();
+            var product = _context.Products.Find(productId);
+            _context.Remove(product);
+            save();
         }
 
         public Product GetProductId(int productId)
         {
-            throw new NotImplementedException();
+            return _context.Products.Find(productId);
         }
 
         public IEnumerable<Product> GetProducts()
         {
-            throw new NotImplementedException();
+            return _context.Products.ToList();
         }
 
         public void InsertProduct(Product product)
         {
-            throw new NotImplementedException();
+            _context.Add(product);
+            save();
         }
 
         public void save()
         {
-            throw new NotImplementedException();
+            _context.SaveChanges();
         }
 
         public void UpdateProduct(Product product)
         {
-            throw new NotImplementedException();
+            _context.Entry(product).State = EntityState.Modified;
+            save();
         }
     }
 }
